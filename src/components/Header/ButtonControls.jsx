@@ -29,28 +29,28 @@ function ButtonControls() {
 
     if (!isLoggedIn) {
         return (
-            <div className='hidden md:block'>
+            <div className='hidden md:flex space-x-2'>
                 <Button
-                    className="secondary-button me-2"
+                    className="text-textColorButton py-2 bg-primary-light min-w-[140px]"
                     onClick={() => dispatch(showModal('signIn'))}
                 >
                     {t('signin')}
                 </Button>
-                <Button className="primary-button" onClick={() => dispatch(showModal('signUp'))}>
+                <Button className="text-textColorButton py-2 bg-primary-light min-w-[140px]" onClick={() => dispatch(showModal('signUp'))}>
                     {t('signup')}
                 </Button>
             </div>
         );
     }
     return (
-        <div className='hidden md:block'>
+        <div className='hidden md:flex space-x-2 max-lg:flex-col'>
             <Button
-                className="secondary-button me-2"
+                className="text-textColorButton py-2 bg-primary-light min-w-[140px]"
                 onClick={() => setConfirmLogOutNotification(true)}
             >
                 {t('logout')}
             </Button>
-            <Button className="primary-button" onClick={() => navigate('/profile')}>
+            <Button className="text-textColorButton py-2 bg-primary-light min-w-[140px]" onClick={() => navigate('/profile')}>
                 {t('profile')}
             </Button>
             {confirmLogOutNotification && (

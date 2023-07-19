@@ -24,7 +24,7 @@ function LanguageSwitcher() {
                     onClick={changeLanguage}
                     aria-label="Toggle language"
                 >
-                    <BsToggle2On className="text-4xl text-gray-700 cursor-pointer" />
+                    <BsToggle2On className="text-4xl text-textColor cursor-pointer" />
                 </button>
             ) : (
                 <button
@@ -32,11 +32,11 @@ function LanguageSwitcher() {
                     onClick={changeLanguage}
                     aria-label="Toggle language"
                 >
-                    <BsToggle2Off className="text-4xl text-gray-700 cursor-pointer" />
+                    <BsToggle2Off className="text-4xl text-textColor cursor-pointer" />
                 </button>
             )}
             <div className="text-sm font-medium">
-                <button className="text-black hover:underline">
+                <button className="text-textColor hover:underline">
                     {language === 'en' ? 'EN' : 'RU'}
                 </button>
             </div>

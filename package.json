@@ -11,6 +11,8 @@
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet --fix"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.15",
+    "@heroicons/react": "^2.0.18",
     "@reduxjs/toolkit": "^1.9.5",
     "bootstrap-switch-button-react": "^1.2.0",
     "clsx": "^2.0.0",

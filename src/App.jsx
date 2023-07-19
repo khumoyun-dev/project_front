@@ -12,10 +12,10 @@ import HomePage from "./pages/HomePage";
 function App() {
 
   return (
-    <>
+    <div className="bg-backgroundPrimaryColor transition-all duration-300 ease-out min-h-screen">
       <Header />
       <HomePage />
-    </>
+    </div>
   );
 }
 

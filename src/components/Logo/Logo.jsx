@@ -13,7 +13,7 @@ function Logo() {
         <Link href="/" onClick={clickOnLogo}>
             <div className="flex items-center">
                 <LogoSvg />
-                <p className='text-2xl font-medium'>mycollectoapp</p>
+                <p className='text-2xl font-medium text-titleColor'>mycollectoapp</p>
             </div>
         </Link>
     );

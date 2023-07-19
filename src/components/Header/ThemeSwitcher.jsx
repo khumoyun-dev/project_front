@@ -22,7 +22,7 @@ function ThemeSwitcher() {
                 </button>
             ) : (
                 <button type="button" className="transition-transform hover:duration-1000" onClick={switchLightTheme}>
-                    <BsFillMoonFill className="text-4xl text-blue-600 transform transition-transform hover:rotate-12" />
+                    <BsFillMoonFill className="text-3xl text-primary transform transition-transform hover:rotate-12" />
                 </button>
             )}
         </div>
