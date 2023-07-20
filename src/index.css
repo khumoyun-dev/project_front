@@ -24,7 +24,7 @@
   }
 
   html[data-theme='dark'] {
-    --primary-color: #67e8f9;
+    --primary-color: #36daf0;
     --primary-color-light: #22b4c7;
     --secondary-color: #3953b9;
     --secondary-color-light: #5d70c5;
@@ -39,5 +39,34 @@
     --text-color-button: #ffffff;
     --likes-color: #f48f9d;
     --transparent: transparent;
+  }
+}
+
+@layer utilities {
+  .primary-button {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 0;
+    color: var(--text-color-button);
+    transition: all 0.2s ease-out;
+    min-width: 140px;
+    padding: 10px 0;
+
+    text-shadow:
+      -1px -1px 0 #000,
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
+
+    &:hover {
+      opacity: 0.8;
+      background-color: var(--primary-color-light);
+    }
+
+    &:active {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+      opacity: 0.5;
+    }
   }
 }

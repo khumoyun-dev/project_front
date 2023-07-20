@@ -31,12 +31,12 @@ function ButtonControls() {
         return (
             <div className='hidden md:flex space-x-2'>
                 <Button
-                    className="text-textColorButton py-2 bg-primary-light min-w-[140px]"
+                    className="primary-button"
                     onClick={() => dispatch(showModal('signIn'))}
                 >
                     {t('signin')}
                 </Button>
-                <Button className="text-textColorButton py-2 bg-primary-light min-w-[140px]" onClick={() => dispatch(showModal('signUp'))}>
+                <Button className="primary-button" onClick={() => dispatch(showModal('signUp'))}>
                     {t('signup')}
                 </Button>
             </div>
@@ -45,12 +45,12 @@ function ButtonControls() {
     return (
         <div className='hidden md:flex space-x-2 max-lg:flex-col'>
             <Button
-                className="text-textColorButton py-2 bg-primary-light min-w-[140px]"
+                className="text-textColorButton py-2 bg-primary-light min-w-[140px] hover:bg-primary transition"
                 onClick={() => setConfirmLogOutNotification(true)}
             >
                 {t('logout')}
             </Button>
-            <Button className="text-textColorButton py-2 bg-primary-light min-w-[140px]" onClick={() => navigate('/profile')}>
+            <Button className="text-textColorButton py-2 bg-primary-light min-w-[140px] hover:bg-primary transition" onClick={() => navigate('/profile')}>
                 {t('profile')}
             </Button>
             {confirmLogOutNotification && (
